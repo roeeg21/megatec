@@ -1,3 +1,46 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "A modern architectural building with clean lines, representing complex construction projects.",
+      "imageUrl": "https://images.unsplash.com/photo-1765750376553-8216f7098e17?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YXJjaGl0ZWN0dXJlJTIwYnVpbGRpbmd8ZW58MHx8fHwxNzY1NzkzMDAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "architecture building"
+    },
+    {
+      "id": "role-owner",
+      "description": "A dashboard view showing project KPIs and overall progress, representing control and visibility for project owners.",
+      "imageUrl": "https://images.unsplash.com/photo-1659018966825-43297e655ccf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXNoYm9hcmQlMjBjaGFydHxlbnwwfHx8fDE3NjU3ODg3ODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dashboard chart"
+    },
+    {
+      "id": "role-manager",
+      "description": "A Gantt chart or timeline view, representing project coordination and management.",
+      "imageUrl": "https://images.unsplash.com/photo-1727522974735-44251dfe61b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Z2FudHQlMjBjaGFydHxlbnwwfHx8fDE3NjU3ODgzOTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "gantt chart"
+    },
+    {
+      "id": "role-contractor",
+      "description": "A construction site with workers looking at blueprints on a tablet, representing execution and on-site work.",
+      "imageUrl": "https://images.unsplash.com/photo-1591955506264-3f5a6834570a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjb25zdHJ1Y3Rpb24lMjBzaXRlfGVufDB8fHx8MTc2NTcwNzc5OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "construction site"
+    },
+    {
+      "id": "role-consultant",
+      "description": "A detailed architectural drawing or 3D model, representing design and supervision.",
+      "imageUrl": "https://images.unsplash.com/photo-1721244653757-b76cc4679dfb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxibHVlcHJpbnQlMjBkZXNpZ258ZW58MHx8fHwxNzY1NzkzNTY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "blueprint design"
+    },
+    {
+      "id": "role-legal",
+      "description": "A secure vault or archive room, representing defensible records and audit trails.",
+      "imageUrl": "https://images.unsplash.com/photo-1715520530023-cc8a1b2044ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhcmNoaXZlJTIwZmlsZXN8ZW58MHx8fHwxNzY1Nzk5NTMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "archive files"
+    },
+    {
+      "id": "role-it",
+      "description": "A server room or network infrastructure diagram, representing platform governance and security.",
+      "imageUrl": "https://images.unsplash.com/photo-1573164713988-8665fc963095?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzZXJ2ZXIlMjByb29tfGVufDB8fHx8MTc2NTc5OTUzMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "server room"
+    }
+  ]
 }
