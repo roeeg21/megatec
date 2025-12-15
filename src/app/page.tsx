@@ -5,6 +5,7 @@ import { Features } from '@/components/landing/features';
 import { RoleBasedValue } from '@/components/landing/role-based-value';
 import { AiSummaryTool } from '@/components/landing/ai-summary-tool';
 import { Contact } from '@/components/landing/contact';
+import { Faq } from '@/components/landing/faq';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Hero />
         <Features />
         <RoleBasedValue />
+        <Faq />
         <AiSummaryTool />
         <Contact />
       </main>

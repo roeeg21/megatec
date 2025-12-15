@@ -27,9 +27,7 @@ export const Hero = () => {
             The Single Source of Truth for Your Project
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-200 md:text-xl">
-            Enable transparent, controlled, and legally defensible collaboration
-            across all organizations involved in complex construction and
-            infrastructure projects.
+            ProjectWise is a cloud-based collaboration platform for complex construction, engineering, and infrastructure projects, serving as a Common Data Environment (CDE) for all stakeholders.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Button

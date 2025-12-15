@@ -5,6 +5,7 @@ import {
   History,
   DatabaseZap,
   ShieldCheck,
+  Shapes,
 } from 'lucide-react';
 import {
   Card,
@@ -16,39 +17,39 @@ import {
 const features = [
   {
     icon: <FolderArchive className="h-8 w-8 text-primary" />,
-    title: 'Document Management (CDE)',
+    title: 'Document Management',
     description:
-      'Central repository with controlled access, automatic versioning, and metadata. Everyone works from the right information, every time.',
+      'Centralize project documentation like drawings and contracts with full version control, metadata, and activity logs. Ensure everyone works from the right information.',
   },
   {
     icon: <MessageSquareText className="h-8 w-8 text-primary" />,
     title: 'Project Communications',
     description:
-      'Structured RFIs, transmittals, and site instructions with full conversation history. Replace email chaos with formal, traceable communication.',
+      'Replace email with structured, trackable correspondence. Manage RFIs, site instructions, and approval requests in a formal, auditable record.',
   },
   {
     icon: <Workflow className="h-8 w-8 text-primary" />,
     title: 'Workflow & Approval Management',
     description:
-      'Configurable review and approval processes with deadline tracking and clear ownership of actions. Faster decisions, fewer bottlenecks.',
+      'Automate reviews, approvals, and submittals with customizable workflows. Reduce manual coordination and ensure procedural compliance.',
   },
   {
-    icon: <History className="h-8 w-8 text-primary" />,
-    title: 'Audit Trail & Records Management',
+    icon: <Shapes className="h-8 w-8 text-primary" />,
+    title: 'Model Coordination (BIM)',
     description:
-      'Time-stamped, immutable records with user and company attribution. Legal-grade defensibility and compliance.',
+      'View, manage, and coordinate BIM files directly on the platform. Identify and manage clashes to streamline design and construction.',
   },
   {
     icon: <DatabaseZap className="h-8 w-8 text-primary" />,
-    title: 'Data Ownership & Neutrality',
+    title: 'Field & Issue Management',
     description:
-      'The project owner retains full control and ownership of all project data, preserved long after project completion.',
+      'Capture and manage issues, inspections, and punch lists directly from the job site with our mobile apps, complete with photos and daily reports.',
   },
   {
-    icon: <ShieldCheck className="h-8 w-8 text-primary" />,
-    title: 'Security, Scale & Reliability',
+    icon: <History className="h-8 w-8 text-primary" />,
+    title: 'Audit Trail & Traceability',
     description:
-      'Enterprise-grade security on Oracle Cloud Infrastructure, with role-based access control and proven scale for mega-projects.',
+      'Every action is recorded with a time stamp and author, creating an unalterable audit trail critical for accountability and dispute resolution.',
   },
 ];
 
@@ -61,8 +62,7 @@ export const Features = () => {
             A New Standard for Project Information
           </h2>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            ProjectWise eliminates information chaos, providing structural
-            certainty for complex capital projects.
+            ProjectWise serves as a Common Data Environment (CDE) — a single, secure space where project information is stored, shared, and governed throughout the project lifecycle.
           </p>
         </div>
         <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">

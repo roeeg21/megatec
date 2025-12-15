@@ -17,54 +17,54 @@ const roles = [
     value: 'owner',
     title: 'Project Owner',
     benefits: [
-      'Full visibility across all parties',
-      'Retain ownership of all data',
-      'Reduce risk and disputes',
+      'Gain full visibility and governance across all parties',
+      'Retain long-term ownership of all project data',
+      'Reduce project risk and minimize disputes',
     ],
   },
   {
     value: 'manager',
     title: 'Project Manager',
     benefits: [
-      'Centralize team coordination',
-      'Control workflows and deadlines',
-      'Resolve bottlenecks faster',
+      'Centralize team coordination and track deadlines',
+      'Control and automate critical workflows',
+      'Identify and resolve bottlenecks faster',
     ],
   },
   {
     value: 'contractor',
     title: 'Contractor',
     benefits: [
-      'Always work from the latest documents',
-      'Get clear instructions and approvals',
-      'Submit and track RFIs formally',
+      'Always work from the latest documents and drawings',
+      'Get clear, formal instructions and approvals',
+      'Easily submit and track RFIs and submittals',
     ],
   },
   {
     value: 'consultant',
     title: 'Consultant',
     benefits: [
-      'Ensure design version control',
-      'Maintain traceability of reviews',
-      'Collaborate securely with all teams',
+      'Ensure strict design version control',
+      'Maintain full traceability of reviews and feedback',
+      'Collaborate securely with all project teams',
     ],
   },
   {
     value: 'legal',
     title: 'Legal / Claims',
     benefits: [
-      'Access an immutable audit trail',
-      'Gather time-stamped evidence',
-      'Build a defensible project history',
+      'Access an immutable, unalterable audit trail',
+      'Gather time-stamped evidence for any event',
+      'Build a complete, defensible project history',
     ],
   },
   {
     value: 'it',
     title: 'IT / Digital',
     benefits: [
-      'Ensure enterprise-grade security',
-      'Guarantee platform scalability',
-      'Integrate with existing systems',
+      'Ensure enterprise-grade security and governance',
+      'Guarantee platform scalability for mega-projects',
+      'Integrate with existing systems via APIs',
     ],
   },
 ];
@@ -84,7 +84,7 @@ export const RoleBasedValue = () => {
         </div>
         <div className="mt-16">
           <Tabs defaultValue="owner" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 sm:grid-cols-3 lg:grid-cols-6">
+            <TabsList className="grid h-auto w-full grid-cols-2 flex-wrap sm:grid-cols-3 lg:grid-cols-6">
               {roles.map((role) => (
                 <TabsTrigger key={role.value} value={role.value}>
                   {role.title}
