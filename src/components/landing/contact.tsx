@@ -76,8 +76,8 @@ export function Contact() {
 
   if (isSubmitted) {
     return (
-      <section id="contact" className="w-full bg-white py-20 sm:py-28">
-        <div className="container mx-auto max-w-2xl text-center">
+      <section id="contact" className="w-full bg-background py-20 sm:py-28">
+        <div className="container mx-auto max-w-2xl">
             <Card className="text-center">
                 <CardContent className="p-8 md:p-12">
                     <CheckCircle className="mx-auto h-16 w-16 text-green-500" />
@@ -93,7 +93,7 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="w-full bg-white py-20 sm:py-28">
+    <section id="contact" className="w-full bg-background py-20 sm:py-28">
       <div className="container mx-auto max-w-4xl">
         <Card>
           <CardHeader className="text-center">

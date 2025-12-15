@@ -9,7 +9,7 @@ export const Hero = () => {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-background');
 
   return (
-    <section className="relative h-[80vh] min-h-[600px] w-full">
+    <section className="relative h-[80vh] min-h-[500px] w-full sm:min-h-[600px]">
       {heroImage && (
         <Image
           src={heroImage.imageUrl}
@@ -29,7 +29,7 @@ export const Hero = () => {
           <p className="mt-6 text-lg leading-8 text-gray-200 md:text-xl">
             Megatec is a cloud-based collaboration platform for complex construction, engineering, and infrastructure projects, serving as a Common Data Environment (CDE) for all stakeholders.
           </p>
-          <div className="mt-10 flex items-center justify-center gap-x-6">
+          <div className="mt-10 flex flex-col items-center justify-center gap-y-4 gap-x-6 sm:flex-row">
             <Button
               size="lg"
               className="bg-accent text-accent-foreground hover:bg-accent/90"

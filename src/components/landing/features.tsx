@@ -57,7 +57,7 @@ const features = [
 export const Features = () => {
   return (
     <section id="features" className="w-full py-20 sm:py-28">
-      <div className="container">
+      <div className="container mx-auto">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
             A New Standard for Project Information

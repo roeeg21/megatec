@@ -42,8 +42,8 @@ const faqs = [
 
 export const Faq = () => {
   return (
-    <section id="faq" className="w-full bg-white py-20 sm:py-28">
-      <div className="container max-w-4xl">
+    <section id="faq" className="w-full bg-background py-20 sm:py-28">
+      <div className="container mx-auto max-w-4xl">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
             Frequently Asked Questions
