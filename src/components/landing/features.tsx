@@ -1,15 +1,13 @@
 'use client';
 
 import {
-  FolderArchive,
+  FileText,
   MessageSquareText,
   Workflow,
-  History,
   HardHat,
-  FileText,
   Briefcase,
   Users,
-  Presentation
+  Presentation,
 } from 'lucide-react';
 import {
   Card,
@@ -51,10 +49,16 @@ const features = [
       'לכידה וניהול של ליקויים, בדיקות ודוחות יומיים מהשטח באמצעות אפליקציה ייעודית.',
   },
   {
-    icon: <History className="h-8 w-8 text-primary" />,
-    title: 'תיעוד ובקרה (Audit Trail)',
+    icon: <Briefcase className="h-8 w-8 text-primary" />,
+    title: 'ניהול מכרזים',
     description:
-      'כל פעולה מתועדת עם חותמת זמן ומשתמש, ליצירת נתיב ביקורת מלא למניעת מחלוקות.',
+      'יצירת מכרזים, הזמנת ספקים, והשוואת הצעות במערכת אחת מתועדת.',
+  },
+  {
+    icon: <Users className="h-8 w-8 text-primary" />,
+    title: 'מסמכי ספקים',
+    description:
+      'בקשה ומעקב אחר הגשות מסמכים מספקים עם תהליכי אישור מובנים.',
   },
 ];
 
@@ -67,7 +71,8 @@ export const Features = () => {
             סטנדרט חדש לניהול מידע בפרויקטים
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            Megatec משמשת כסביבת נתונים משותפת (CDE) - מרחב מאובטח אחד בו מידע הפרויקט מאוחסן, משותף ונשלט לאורך כל מחזור חייו.
+            Aconex משמשת כסביבת נתונים משותפת (CDE) - מרחב מאובטח אחד בו מידע
+            הפרויקט מאוחסן, משותף ונשלט לאורך כל מחזור חייו.
           </p>
         </div>
         <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -80,9 +85,7 @@ export const Features = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription>
-                  {feature.description}
-                </CardDescription>
+                <CardDescription>{feature.description}</CardDescription>
               </CardContent>
             </Card>
           ))}

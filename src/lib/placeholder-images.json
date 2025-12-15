@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero-background",
-      "description": "A modern architectural building with clean lines, representing complex construction projects.",
-      "imageUrl": "https://images.unsplash.com/photo-1765750376553-8216f7098e17?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YXJjaGl0ZWN0dXJlJTIwYnVpbGRpbmd8ZW58MHx8fHwxNzY1NzkzMDAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "architecture building"
+      "description": "A sprawling construction site at dusk, showing cranes and the skeleton of a large building.",
+      "imageUrl": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb25zdHJ1Y3Rpb24lMjBzaXRlfGVufDB8fHx8MTc2NTcwNzc5OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "construction site"
     },
     {
       "id": "role-owner",
