@@ -6,18 +6,31 @@ import { RoleBasedValue } from '@/components/landing/role-based-value';
 import { AiSummaryTool } from '@/components/landing/ai-summary-tool';
 import { Contact } from '@/components/landing/contact';
 import { Faq } from '@/components/landing/faq';
+import { ScrollAnimation } from '@/components/landing/scroll-animation';
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <Header />
       <main className="flex-grow">
-        <Hero />
-        <Features />
-        <RoleBasedValue />
-        <Faq />
-        <AiSummaryTool />
-        <Contact />
+        <ScrollAnimation>
+          <Hero />
+        </ScrollAnimation>
+        <ScrollAnimation>
+          <Features />
+        </ScrollAnimation>
+        <ScrollAnimation>
+          <RoleBasedValue />
+        </ScrollAnimation>
+        <ScrollAnimation>
+          <Faq />
+        </ScrollAnimation>
+        <ScrollAnimation>
+          <AiSummaryTool />
+        </ScrollAnimation>
+        <ScrollAnimation>
+          <Contact />
+        </ScrollAnimation>
       </main>
       <Footer />
     </div>
