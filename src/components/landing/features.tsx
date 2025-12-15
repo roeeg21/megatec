@@ -4,7 +4,6 @@ import {
   Workflow,
   History,
   DatabaseZap,
-  ShieldCheck,
   Shapes,
 } from 'lucide-react';
 import {
@@ -62,7 +61,7 @@ export const Features = () => {
             A New Standard for Project Information
           </h2>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            ProjectWise serves as a Common Data Environment (CDE) — a single, secure space where project information is stored, shared, and governed throughout the project lifecycle.
+            Megatec serves as a Common Data Environment (CDE) — a single, secure space where project information is stored, shared, and governed throughout the project lifecycle.
           </p>
         </div>
         <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">

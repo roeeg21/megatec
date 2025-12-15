@@ -101,7 +101,7 @@ export function Contact() {
               Ready to Take Control?
             </CardTitle>
             <CardDescription className="pt-2 text-lg">
-              Get a demo of ProjectWise and see how to bring order to your
+              Get a demo of Megatec and see how to bring order to your
               project collaboration.
             </CardDescription>
           </CardHeader>

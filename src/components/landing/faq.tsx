@@ -14,21 +14,21 @@ const faqs = [
   },
   {
     value: 'item-2',
-    question: 'What are the benefits of using a platform like ProjectWise?',
+    question: 'What are the benefits of using a platform like Megatec?',
     answer:
       'The main benefits include establishing a single source of truth for all project data, improving collaboration across different organizations, reducing risks and disputes through immutable records, increasing efficiency with automated workflows, and enabling full access to project information from anywhere via mobile and web.',
   },
   {
     value: 'item-3',
-    question: 'How does ProjectWise handle security and data ownership?',
+    question: 'How does Megatec handle security and data ownership?',
     answer:
       'The platform is hosted on enterprise-grade cloud infrastructure and uses role-based access control to ensure users only see approved information. Each organization retains ownership and control over its own data while being able to share selected information with project partners in a secure manner.',
   },
   {
     value: 'item-4',
-    question: 'Can ProjectWise integrate with other systems?',
+    question: 'Can Megatec integrate with other systems?',
     answer:
-      'Yes, ProjectWise is designed to integrate with other enterprise project systems such as scheduling, ERP, and analytics tools. This is accomplished via APIs and standardized data exchange processes to enable broader project controls and reporting.',
+      'Yes, Megatec is designed to integrate with other enterprise project systems such as scheduling, ERP, and analytics tools. This is accomplished via APIs and standardized data exchange processes to enable broader project controls and reporting.',
   },
   {
     value: 'item-5',
@@ -47,7 +47,7 @@ export const Faq = () => {
             Frequently Asked Questions
           </h2>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            Find answers to common questions about how ProjectWise works and how
+            Find answers to common questions about how Megatec works and how
             it can benefit your projects.
           </p>
         </div>

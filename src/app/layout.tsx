@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'ProjectWise - Unified Project Collaboration',
+  title: 'Megatec - Unified Project Collaboration',
   description:
     'Enable transparent, controlled, and legally defensible collaboration across all organizations involved in complex construction and infrastructure projects.',
 };

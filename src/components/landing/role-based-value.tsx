@@ -78,7 +78,7 @@ export const RoleBasedValue = () => {
             Built for Every Role on the Project
           </h2>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            From the owner to the contractor, ProjectWise provides a tailored
+            From the owner to the contractor, Megatec provides a tailored
             experience that surfaces what matters most to you.
           </p>
         </div>
@@ -105,7 +105,7 @@ export const RoleBasedValue = () => {
                             The Value for the {role.title}
                           </CardTitle>
                           <CardDescription className="pt-2">
-                            With ProjectWise, you can focus on your core
+                            With Megatec, you can focus on your core
                             responsibilities with confidence.
                           </CardDescription>
                         </CardHeader>
