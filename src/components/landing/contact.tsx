@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useFormState, useFormStatus } from 'react-dom';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
@@ -23,7 +23,10 @@ import {
 } from '@/components/ui/select';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, Loader } from 'lucide-react';
+import { sendDemoRequest } from '@/app/actions';
+import { useEffect } from 'react';
+import { useToast } from '@/hooks/use-toast';
 
 const roles = [
   'Project Owner',
@@ -88,8 +91,33 @@ const formSchema = z.object({
   message: z.string().optional(),
 });
 
+
+const initialState = {
+  message: '',
+  success: false,
+};
+
+function SubmitButton() {
+  const { pending } = useFormStatus();
+  return (
+    <Button type="submit" size="lg" className="w-full" disabled={pending}>
+       {pending ? (
+        <>
+          <Loader className="mr-2 h-4 w-4 animate-spin" />
+          Submitting...
+        </>
+      ) : (
+        'Get a Demo'
+      )}
+    </Button>
+  );
+}
+
+
 export function Contact() {
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [state, formAction] = useFormState(sendDemoRequest, initialState);
+  const { toast } = useToast();
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -102,12 +130,18 @@ export function Contact() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    setIsSubmitted(true);
-  }
+  useEffect(() => {
+    if (state.message && !state.success) {
+      toast({
+        variant: "destructive",
+        title: "Submission Failed",
+        description: state.message,
+      });
+    }
+  }, [state, toast]);
 
-  if (isSubmitted) {
+
+  if (state.success) {
     return (
       <section id="contact" className="w-full bg-background py-20 sm:py-28">
         <div className="container mx-auto max-w-2xl">
@@ -141,7 +175,7 @@ export function Contact() {
           <CardContent>
             <Form {...form}>
               <form
-                onSubmit={form.handleSubmit(onSubmit)}
+                action={formAction}
                 className="space-y-6"
               >
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
@@ -211,6 +245,7 @@ export function Contact() {
                       <Select
                         onValueChange={field.onChange}
                         defaultValue={field.value}
+                        name={field.name}
                       >
                         <FormControl>
                           <SelectTrigger>
@@ -238,6 +273,7 @@ export function Contact() {
                       <Select
                         onValueChange={field.onChange}
                         defaultValue={field.value}
+                         name={field.name}
                       >
                         <FormControl>
                           <SelectTrigger>
@@ -286,9 +322,7 @@ export function Contact() {
                     </FormItem>
                   )}
                 />
-                <Button type="submit" size="lg" className="w-full">
-                  Get a Demo
-                </Button>
+                <SubmitButton />
               </form>
             </Form>
           </CardContent>
