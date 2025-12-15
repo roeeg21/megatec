@@ -7,6 +7,7 @@ import { AiSummaryTool } from '@/components/landing/ai-summary-tool';
 import { Contact } from '@/components/landing/contact';
 import { Faq } from '@/components/landing/faq';
 import { ScrollAnimation } from '@/components/landing/scroll-animation';
+import { VideoPromo } from '@/components/landing/video-promo';
 
 export default function Home() {
   return (
@@ -18,6 +19,9 @@ export default function Home() {
         </ScrollAnimation>
         <ScrollAnimation>
           <Features />
+        </ScrollAnimation>
+        <ScrollAnimation>
+          <VideoPromo />
         </ScrollAnimation>
         <ScrollAnimation>
           <RoleBasedValue />
