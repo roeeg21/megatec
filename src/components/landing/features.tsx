@@ -5,52 +5,56 @@ import {
   MessageSquareText,
   Workflow,
   History,
-  DatabaseZap,
-  Shapes,
+  HardHat,
+  FileText,
+  Briefcase,
+  Users,
+  Presentation
 } from 'lucide-react';
 import {
   Card,
   CardHeader,
   CardTitle,
   CardDescription,
+  CardContent,
 } from '@/components/ui/card';
 
 const features = [
   {
-    icon: <FolderArchive className="h-8 w-8 text-primary" />,
-    title: 'Document Management',
+    icon: <FileText className="h-8 w-8 text-primary" />,
+    title: 'ניהול מסמכים',
     description:
-      'Centralize project documentation like drawings and contracts with full version control, metadata, and activity logs. Ensure everyone works from the right information.',
+      'ריכוז כל מסמכי הפרויקט עם ניהול גרסאות מלא, הרשאות גישה מבוקרות, ותיעוד פעילות.',
   },
   {
     icon: <MessageSquareText className="h-8 w-8 text-primary" />,
-    title: 'Project Communications',
+    title: 'תקשורת פרויקטלית',
     description:
-      'Replace email with structured, trackable correspondence. Manage RFIs, site instructions, and approval requests in a formal, auditable record.',
+      'החלפת מיילים בתקשורת מובנית ומתועדת (RFIs, הוראות אתר) ליצירת רקורד אמין.',
   },
   {
     icon: <Workflow className="h-8 w-8 text-primary" />,
-    title: 'Workflow & Approval Management',
+    title: 'ניהול תהליכים ואישורים',
     description:
-      'Automate reviews, approvals, and submittals with customizable workflows. Reduce manual coordination and ensure procedural compliance.',
+      'אוטומציה של סבבי סקירה ואישור עם מעקב אחר זמנים ואחריות, להבטחת עמידה בנהלים.',
   },
   {
-    icon: <Shapes className="h-8 w-8 text-primary" />,
-    title: 'Model Coordination (BIM)',
+    icon: <Presentation className="h-8 w-8 text-primary" />,
+    title: 'תיאום מודלים (BIM)',
     description:
-      'View, manage, and coordinate BIM files directly on the platform. Identify and manage clashes to streamline design and construction.',
+      'צפייה, ניהול ותיאום של מודלי BIM ישירות בפלטפורמה, כולל זיהוי וניהול התנגשויות.',
   },
   {
-    icon: <DatabaseZap className="h-8 w-8 text-primary" />,
-    title: 'Field & Issue Management',
+    icon: <HardHat className="h-8 w-8 text-primary" />,
+    title: 'ניהול שדה וליקויים',
     description:
-      'Capture and manage issues, inspections, and punch lists directly from the job site with our mobile apps, complete with photos and daily reports.',
+      'לכידה וניהול של ליקויים, בדיקות ודוחות יומיים מהשטח באמצעות אפליקציה ייעודית.',
   },
   {
     icon: <History className="h-8 w-8 text-primary" />,
-    title: 'Audit Trail & Traceability',
+    title: 'תיעוד ובקרה (Audit Trail)',
     description:
-      'Every action is recorded with a time stamp and author, creating an unalterable audit trail critical for accountability and dispute resolution.',
+      'כל פעולה מתועדת עם חותמת זמן ומשתמש, ליצירת נתיב ביקורת מלא למניעת מחלוקות.',
   },
 ];
 
@@ -60,10 +64,10 @@ export const Features = () => {
       <div className="container mx-auto">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
-            A New Standard for Project Information
+            סטנדרט חדש לניהול מידע בפרויקטים
           </h2>
-          <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            Megatec serves as a Common Data Environment (CDE) — a single, secure space where project information is stored, shared, and governed throughout the project lifecycle.
+          <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+            Megatec משמשת כסביבת נתונים משותפת (CDE) - מרחב מאובטח אחד בו מידע הפרויקט מאוחסן, משותף ונשלט לאורך כל מחזור חייו.
           </p>
         </div>
         <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -75,9 +79,11 @@ export const Features = () => {
                   {feature.title}
                 </CardTitle>
               </CardHeader>
-              <CardDescription className="px-6 pb-6">
-                {feature.description}
-              </CardDescription>
+              <CardContent>
+                <CardDescription>
+                  {feature.description}
+                </CardDescription>
+              </CardContent>
             </Card>
           ))}
         </div>

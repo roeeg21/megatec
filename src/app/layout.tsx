@@ -3,9 +3,9 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Megatec - Unified Project Collaboration',
+  title: 'Megatec - פלטפורמה לניהול פרויקטים בענף הבנייה',
   description:
-    'Enable transparent, controlled, and legally defensible collaboration across all organizations involved in complex construction and infrastructure projects.',
+    'פלטפורמה אחת שמרכזת את כל המידע, התקשורת והתהליכים של פרויקט הבנייה – בצורה מאובטחת, שקופה ובלתי-ניתנת לשינוי.',
 };
 
 export default function RootLayout({
@@ -14,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="he" dir="rtl" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link

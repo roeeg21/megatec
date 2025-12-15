@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export const Hero = () => {
@@ -24,10 +24,10 @@ export const Hero = () => {
       <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
         <div className="container max-w-4xl">
           <h1 className="font-headline text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
-            The Single Source of Truth for Your Project
+            פלטפורמה אחת. מקור אמת אחד.
           </h1>
-          <p className="mt-6 text-lg leading-8 text-gray-200 md:text-xl">
-            Megatec is a cloud-based collaboration platform for complex construction, engineering, and infrastructure projects, serving as a Common Data Environment (CDE) for all stakeholders.
+          <p className="mt-6 text-lg leading-relaxed text-gray-200 md:text-xl">
+          Megatec היא פלטפורמת ענן המרכזת את כל המידע, התקשורת והתהליכים של פרויקט הבנייה – בצורה מאובטחת, שקופה ובלתי ניתנת לשינוי, ומשמשת כמקור האמת היחיד לכלל המעורבים.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-y-4 gap-x-6 sm:flex-row">
             <Button
@@ -39,8 +39,8 @@ export const Hero = () => {
                   ?.scrollIntoView({ behavior: 'smooth' })
               }
             >
-              Request a Demo
-              <ArrowRight className="ml-2 h-5 w-5" />
+              <ArrowLeft className="ml-2 h-5 w-5" />
+              בקש הדגמה
             </Button>
             <Button
               size="lg"
@@ -52,7 +52,7 @@ export const Hero = () => {
                   ?.scrollIntoView({ behavior: 'smooth' })
               }
             >
-              Learn more <span className="ml-2">&rarr;</span>
+              למד עוד <span className="mr-2">&larr;</span>
             </Button>
           </div>
         </div>

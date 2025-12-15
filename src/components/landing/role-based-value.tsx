@@ -15,56 +15,56 @@ import { Check } from 'lucide-react';
 const roles = [
   {
     value: 'owner',
-    title: 'Project Owner',
+    title: 'יזם / בעלים',
     benefits: [
-      'Gain full visibility and governance across all parties',
-      'Retain long-term ownership of all project data',
-      'Reduce project risk and minimize disputes',
+      'שקיפות מלאה וממשל תאגידי על כל הגורמים',
+      'בעלות ארוכת טווח על כל נתוני הפרויקט',
+      'הפחתת סיכונים ומזעור מחלוקות',
     ],
   },
   {
     value: 'manager',
-    title: 'Project Manager',
+    title: 'מנהל פרויקט',
     benefits: [
-      'Centralize team coordination and track deadlines',
-      'Control and automate critical workflows',
-      'Identify and resolve bottlenecks faster',
+      'ריכוז תיאום הצוות ומעקב אחר לוחות זמנים',
+      'בקרה ואוטומציה של תהליכים קריטיים',
+      'זיהוי ופתרון צווארי בקבוק במהירות',
     ],
   },
   {
     value: 'contractor',
-    title: 'Contractor',
+    title: 'קבלן',
     benefits: [
-      'Always work from the latest documents and drawings',
-      'Get clear, formal instructions and approvals',
-      'Easily submit and track RFIs and submittals',
+      'עבודה תמידית מהמסמכים והשרטוטים העדכניים ביותר',
+      'קבלת הנחיות ואישורים ברורים ורשמיים',
+      'הגשה ומעקב קלים אחר בקשות למידע (RFIs) והגשות',
     ],
   },
   {
     value: 'consultant',
-    title: 'Consultant',
+    title: 'יועץ / מתכנן',
     benefits: [
-      'Ensure strict design version control',
-      'Maintain full traceability of reviews and feedback',
-      'Collaborate securely with all project teams',
+      'הבטחת בקרת גרסאות תכנון קפדנית',
+      'שמירה על עקיבות מלאה של סקירות ומשובים',
+      'שיתוף פעולה מאובטח עם כל צוותי הפרויקט',
     ],
   },
   {
     value: 'legal',
-    title: 'Legal / Claims',
+    title: 'תביעות / משפטי',
     benefits: [
-      'Access an immutable, unalterable audit trail',
-      'Gather time-stamped evidence for any event',
-      'Build a complete, defensible project history',
+      'גישה לנתיב ביקורת (audit trail) בלתי ניתן לשינוי',
+      'איסוף ראיות עם חותמות זמן לכל אירוע',
+      'בניית היסטוריית פרויקט מלאה וניתנת להגנה משפטית',
     ],
   },
   {
     value: 'it',
-    title: 'IT / Digital',
+    title: 'מערכות מידע',
     benefits: [
-      'Ensure enterprise-grade security and governance',
-      'Guarantee platform scalability for mega-projects',
-      'Integrate with existing systems via APIs',
+      'הבטחת אבטחה וממשל ברמה ארגונית',
+      'הבטחת סקיילביליות של הפלטפורמה למגה-פרויקטים',
+      'אינטגרציה עם מערכות קיימות באמצעות API',
     ],
   },
 ];
@@ -75,11 +75,10 @@ export const RoleBasedValue = () => {
       <div className="container mx-auto">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
-            Built for Every Role on the Project
+            מ为וון לכל תפקיד בפרויקט
           </h2>
-          <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            From the owner to the contractor, Megatec provides a tailored
-            experience that surfaces what matters most to you.
+          <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+            מהיזם ועד לקבלן, Megatec מספקת חוויה מותאמת אישית שמציפה את מה שהכי חשוב לך.
           </p>
         </div>
         <div className="mt-16">
@@ -102,18 +101,17 @@ export const RoleBasedValue = () => {
                       <div className="p-6 md:p-8">
                         <CardHeader className="p-0">
                           <CardTitle className="font-headline text-2xl">
-                            The Value for the {role.title}
+                            הערך עבור {role.title}
                           </CardTitle>
                           <CardDescription className="pt-2">
-                            With Megatec, you can focus on your core
-                            responsibilities with confidence.
+                            עם Megatec, תוכל להתמקד באחריות הליבה שלך בביטחון.
                           </CardDescription>
                         </CardHeader>
                         <CardContent className="p-0 pt-6">
                           <ul className="space-y-4">
                             {role.benefits.map((benefit) => (
                               <li key={benefit} className="flex items-start">
-                                <Check className="mr-3 h-6 w-6 flex-shrink-0 text-primary" />
+                                <Check className="ml-3 h-6 w-6 flex-shrink-0 text-primary" />
                                 <span>{benefit}</span>
                               </li>
                             ))}
