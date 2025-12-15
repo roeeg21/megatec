@@ -67,7 +67,7 @@ export const Features = () => {
             סטנדרט חדש לניהול מידע בפרויקטים
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            Megatec משמשת כסביבת נתונים משותפת (CDE) - מרחב מאובטח אחד בו מידע הפרויקט מאוחסן, משותף ונשלט לאורך כל מחזור חייו.
+            Aconex משמשת כסביבת נתונים משותפת (CDE) - מרחב מאובטח אחד בו מידע הפרויקט מאוחסן, משותף ונשלט לאורך כל מחזור חייו.
           </p>
         </div>
         <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
