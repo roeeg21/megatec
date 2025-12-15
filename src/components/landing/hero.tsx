@@ -27,7 +27,7 @@ export const Hero = () => {
             פלטפורמה אחת. מקור אמת אחד.
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-gray-200 md:text-xl">
-          Megatec היא פלטפורמת ענן המרכזת את כל המידע, התקשורת והתהליכים של פרויקט הבנייה – בצורה מאובטחת, שקופה ובלתי ניתנת לשינוי, ומשמשת כמקור האמת היחיד לכלל המעורבים.
+          Aconex היא פלטפורמת ענן המרכזת את כל המידע, התקשורת והתהליכים של פרויקט הבנייה – בצורה מאובטחת, שקופה ובלתי ניתנת לשינוי, ומשמשת כמקור האמת היחיד לכלל המעורבים.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-y-4 gap-x-6 sm:flex-row">
             <Button

@@ -19,7 +19,7 @@ export const Header = () => {
             </Button>
         </div>
         <div className="mr-4 flex items-center">
-          <span className="mr-2 font-bold font-headline">Megatec</span>
+          <span className="mr-2 font-bold font-headline">Aconex</span>
           <Building2 className="h-6 w-6 text-primary" />
         </div>
       </div>

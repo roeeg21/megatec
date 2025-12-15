@@ -78,7 +78,7 @@ export const RoleBasedValue = () => {
             מ为וון לכל תפקיד בפרויקט
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            מהיזם ועד לקבלן, Megatec מספקת חוויה מותאמת אישית שמציפה את מה שהכי חשוב לך.
+            מהיזם ועד לקבלן, Aconex מספקת חוויה מותאמת אישית שמציפה את מה שהכי חשוב לך.
           </p>
         </div>
         <div className="mt-16">
@@ -104,7 +104,7 @@ export const RoleBasedValue = () => {
                             הערך עבור {role.title}
                           </CardTitle>
                           <CardDescription className="pt-2">
-                            עם Megatec, תוכל להתמקד באחריות הליבה שלך בביטחון.
+                            עם Aconex, תוכל להתמקד באחריות הליבה שלך בביטחון.
                           </CardDescription>
                         </CardHeader>
                         <CardContent className="p-0 pt-6">

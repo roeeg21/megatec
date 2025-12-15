@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Megatec - פלטפורמה לניהול פרויקטים בענף הבנייה',
+  title: 'Aconex - פלטפורמה לניהול פרויקטים בענף הבנייה',
   description:
     'פלטפורמה אחת שמרכזת את כל המידע, התקשורת והתהליכים של פרויקט הבנייה – בצורה מאובטחת, שקופה ובלתי-ניתנת לשינוי.',
 };

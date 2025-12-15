@@ -7,7 +7,7 @@ export const Footer = () => {
         <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
           <Building2 className="h-6 w-6 text-primary" />
           <p className="text-center text-sm leading-loose md:text-left">
-            &copy; {new Date().getFullYear()} Megatec. All Rights Reserved.
+            &copy; {new Date().getFullYear()} Aconex. All Rights Reserved.
           </p>
         </div>
       </div>
