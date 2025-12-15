@@ -74,7 +74,11 @@ const countries = [
     "Turkey", "Turkmenistan", "Tuvalu", "Uganda", "Ukraine",
     "United Arab Emirates", "United Kingdom", "United States",
     "Uruguay", "Uzbekistan", "Vanuatu", "Vatican City",
+<<<<<<< HEAD
     "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe"
+=======
+    "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe".
+>>>>>>> 41aa8281004e29d496f47c65bab008ce00ae2330
 ];
 
 const formSchema = z.object({

@@ -71,8 +71,12 @@ export const Features = () => {
             סטנדרט חדש לניהול מידע בפרויקטים
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+<<<<<<< HEAD
             Aconex משמשת כסביבת נתונים משותפת (CDE) - מרחב מאובטח אחד בו מידע
             הפרויקט מאוחסן, משותף ונשלט לאורך כל מחזור חייו.
+=======
+            Aconex משמשת כסביבת נתונים משותפת (CDE) - מרחב מאובטח אחד בו מידע הפרויקט מאוחסן, משותף ונשלט לאורך כל מחזור חייו.
+>>>>>>> 41aa8281004e29d496f47c65bab008ce00ae2330
           </p>
         </div>
         <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
