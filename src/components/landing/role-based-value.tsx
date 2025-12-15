@@ -75,7 +75,7 @@ export const RoleBasedValue = () => {
       <div className="container mx-auto">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
-            מ为וון לכל תפקיד בפרויקט
+            מגוון לכל תפקיד בפרויקט
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
             מהיזם ועד לקבלן, Aconex מספקת חוויה מותאמת אישית שמציפה את מה שהכי חשוב לך.
