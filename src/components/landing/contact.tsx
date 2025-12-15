@@ -35,7 +35,7 @@ const roles = [
 ];
 
 const countries = [
-  "Afghanistan", "Albania", "Algeria", "Andorra", "Angola",
+    "Afghanistan", "Albania", "Algeria", "Andorra", "Angola",
     "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Austria",
     "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados",
     "Belarus", "Belgium", "Belize", "Benin", "Bhutan",
@@ -74,11 +74,7 @@ const countries = [
     "Turkey", "Turkmenistan", "Tuvalu", "Uganda", "Ukraine",
     "United Arab Emirates", "United Kingdom", "United States",
     "Uruguay", "Uzbekistan", "Vanuatu", "Vatican City",
-<<<<<<< HEAD
     "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe"
-=======
-    "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe".
->>>>>>> 41aa8281004e29d496f47c65bab008ce00ae2330
 ];
 
 const formSchema = z.object({
